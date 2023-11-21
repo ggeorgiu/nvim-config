@@ -23,7 +23,7 @@ local opts = {
 		colorscheme = {"rose-pine"},
 	},
 	rtp = {
-		  disabled_plugins = {
+    disabled_plugins = {
       "gzip",
       "matchit",
       "matchparen",
@@ -36,9 +36,9 @@ local opts = {
       "zipPlugin",
     },
 	},
-	change_detection = {
-		notify = true	
-	},
+  change_detection = {
+    notify = true	
+  },
 }
 
 require("lazy").setup('plugins', opts)
