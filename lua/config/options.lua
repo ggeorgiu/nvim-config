@@ -1,4 +1,4 @@
-local opt = vim.opt 
+local opt = vim.opt
 
 -- Tab / Indentation
 opt.tabstop = 2
@@ -22,7 +22,7 @@ opt.colorcolumn = '140'
 opt.signcolumn = "yes"
 opt.cmdheight = 1
 opt.scrolloff = 10
-opt.completeopt = "menuone,noinsert,noselect"                                                      
+opt.completeopt = "menuone,noinsert,noselect"
 
 -- Behaviour
 opt.hidden = true
@@ -33,7 +33,7 @@ opt.undodir = vim.fn.expand("~/.vim/undodir")
 opt.undofile = true
 opt.backspace = "indent,eol,start"
 opt.splitright = true
-opt.splitbelow = true	
+opt.splitbelow = true
 opt.autochdir = false
 opt.iskeyword:append("-")
 opt.mouse:append('a')

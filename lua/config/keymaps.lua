@@ -22,6 +22,12 @@ keymap.set("n", "<leader>tv", ":vsplit | term<CR>", opts) -- Open terminal split
 keymap.set("v", "<", "<gv")
 keymap.set("v", ">", ">gv")
 
+-- Disable arrow keys
+keymap.set("n", "<up>", "<nop>")
+keymap.set("n", "<down>", "<nop>")
+keymap.set("n", "<left>", "<nop>")
+keymap.set("n", "<right>", "<nop>")
+
 -- Comments
 vim.api.nvim_set_keymap("n", "<C-_>", "gcc", { noremap = false })
 vim.api.nvim_set_keymap("v", "<C-_>", "gcc", { noremap = false })
