@@ -1,6 +1,6 @@
 return {
 	"glepnir/lspsaga.nvim",
-	lazy = false, 
+	lazy = false,
 	config = function()
 		require("lspsaga").setup({
 			-- keybinds for navigation in lspsaga window

@@ -8,11 +8,11 @@ local config = function()
 		vim.fn.sign_define(hl, { text = icon, texthl = hl, numhl = "" })
 	end
 
-  local on_attach = require("util.lsp").on_attach
-  local cmp_nvim_lsp = require("cmp_nvim_lsp")
-  local capabilities = cmp_nvim_lsp.default_capabilities()
-	
-  -- lua
+	local on_attach = require("util.lsp").on_attach
+	local cmp_nvim_lsp = require("cmp_nvim_lsp")
+	local capabilities = cmp_nvim_lsp.default_capabilities()
+
+	-- lua
 	lspconfig.lua_ls.setup({
 		capabilities = capabilities,
 		on_attach = on_attach,
@@ -35,8 +35,8 @@ local config = function()
 
 	-- gopls
 	lspconfig.gopls.setup({
-    capabilities = capabilities,
-    on_attach = on_attach,
+		capabilities = capabilities,
+		on_attach = on_attach,
 		settings = {
 			gopls = {
 				analyses = {
@@ -90,5 +90,5 @@ return {
 		"hrsh7th/nvim-cmp",
 		"hrsh7th/cmp-buffer",
 		"hrsh7th/cmp-nvim-lsp",
-  },
+	},
 }
