@@ -40,7 +40,8 @@ return {
 			},
 		})
 	end,
-	dependencies = {
+
+  dependencies = {
 		"onsails/lspkind.nvim",
 		{
 
